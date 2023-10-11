@@ -1,5 +1,7 @@
 // import scripts here
-// Скрипти для рендеру категорій
-import './js/categories-api/categories-api';
-import './js/categories-api/render';
-//_________________________________________
+import {} from './js/appi';
+import {} from './js/auth';
+
+import {} from './js/help';
+
+import {} from './js/refrs';
