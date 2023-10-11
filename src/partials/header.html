@@ -1,51 +1,40 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bookshelf</title>
-    <link rel="stylesheet" href="./styles.css">
-</head>
-<body>
-    <header class="header">
-        <div class="container-header">
-            <nav class="header-link">
-                <a class="header-logo" href="#">
-                    <svg class="header-logo"><use href="./images/symbol-defs.svg#icon-logo"></use></svg>
-                </a>
-                <ul class="header-link-nav">
-                    <li class="header-link-nav-li"><a href="#">HOME</a></li>
-                    <li class="header-link-nav-li">
-                        <a class="header-shopping-text" href="#">SHOPPING LIST
-                            <svg class="header-shopping-icon"><use href="./images/symbol-defs.svg#icon-shopping"></use></svg>
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-            <!-- <label id="switch" class="switch">
-                <input type="checkbox" onchange="toggleTheme()" id="slider">
-                <span class="slider round"></span>
-            </label> -->
-            <button class="menu-button js-open-menu" type="button" aria-expanded="false" aria-controls="mobile-menu">
-                <svg class="burger-btn">
-                    <use href="./images/symbol-defs.svg#icon-align-left-hover"></use>
-                </svg>
-            </button>
-        </div>
-    </header>
-    <div class="menu-container js-menu-container">
-        <button class="menu-toggle js-close-menu" >
-            <svg class="icon"><use href="./images/symbol-defs.svg#icon-x-close"></use></svg>
+<header class="header">
+    <div class="container-header">
+        <nav class="header-link">
+            <a class="header-logo" href="#">
+                <svg class="header-logo"><use href="./images/symbol-defs.svg#icon-logo"></use></svg>
+            </a>
+            <ul class="header-link-nav">
+                <li class="header-link-nav-li"><a class="header-link-text current"  href="#">HOME</a></li>
+                <li class="header-link-nav-li">
+                    <a class="header-link-text shopping" href="./shoping-list.html">SHOPPING LIST
+                        <svg class="header-shopping-icon"><use href="./images/symbol-defs.svg#icon-shopping"></use></svg>
+                    </a>
+                    
+                </li>
+            </ul>
+        </nav>
+        <!-- <label id="switch" class="switch">
+            <input type="checkbox" onchange="toggleTheme()" id="slider">
+            <span class="slider round"></span>
+        </label> -->
+        <button class="menu-button js-open-menu" type="button" aria-expanded="false" aria-controls="mobile-menu">
+            <svg class="burger-btn">
+                <use href="./images/symbol-defs.svg#icon-align-left-hover"></use>
+            </svg>
         </button>
-        <ul class="burger-link-nav">
-            <li class="burger-link-nav-li"><a href="#">HOME</a></li>
-            <li class="burger-link-nav-li">
-                <a class="burger-shopping-text" href="#">SHOPPING LIST
-                    <svg class="burger-shopping-icon"><use href="./images/symbol-defs.svg#icon-shopping"></use></svg>
-                </a>
-            </li>
-        </ul>
     </div>
-    <script src="./index.js"></script>
-</body>
-</html>
+</header>
+<div class="menu-container js-menu-container">
+    <button class="menu-toggle js-close-menu" >
+        <svg class="icon"><use href="./images/symbol-defs.svg#icon-x-close"></use></svg>
+    </button>
+    <ul class="burger-link-nav">
+        <li class="burger-link-nav-li"><a class="burger-text current" href="#">HOME</a></li>
+        <li class="burger-link-nav-li">
+            <a class="burger-text shopping" href="#">SHOPPING LIST
+                <svg class="burger-shopping-icon"><use href="./images/symbol-defs.svg#icon-shopping"></use></svg>
+            </a>
+        </li>
+    </ul>
+</div>
