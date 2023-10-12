@@ -6,3 +6,9 @@ export async function fetchTopBooks() {
   );
   return response.data;
 }
+export async function fetchBooksOfSelectedCategory(selectedCategory) {
+  const response = await axios.get(
+    `https://books-backend.p.goit.global/books/category?category=${selectedCategory}`
+  );
+  return response.data;
+}
